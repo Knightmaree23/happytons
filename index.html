@@ -1,188 +1,290 @@
-<!-- FEATURES -->
-<section class="grid">
-    <div class="card">
-        <h2>⚔️ Survival Mode</h2>
-        <p>Gather resources, craft tools, and survive against monsters.</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HappyTons</title>
 
-    <div class="card">
-        <h2>🏰 Creative Mode</h2>
-        <p>Build anything you imagine with unlimited blocks.</p>
-    </div>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
 
-    <div class="card">
-        <h2>🌎 Multiplayer</h2>
-        <p>Play with friends on servers and explore amazing worlds.</p>
-    </div>
+body{
+background:#050505;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#000;
+border-bottom:2px solid #00ff66;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#00ff66;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ff66;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(#081108,#050505);
+}
+
+.hero h1{
+font-size:70px;
+color:#00ff66;
+text-shadow:0 0 20px #00ff66;
+}
+
+.hero p{
+margin:20px;
+font-size:20px;
+color:#ccc;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+background:#00ff66;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
+box-shadow:0 0 20px #00ff66;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 40px #00ff66;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:40px;
+color:#00ff66;
+margin-bottom:40px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #00ff66;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00ff66;
+}
+
+.card h3{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.img{
+height:220px;
+background:#111;
+border:2px solid #00ff66;
+border-radius:10px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+color:#00ff66;
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+border-top:2px solid #00ff66;
+color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+HappyTons
+</div>
+
+<nav>
+<a href="#features">Features</a>
+<a href="#gallery">Gallery</a>
+<a href="#download">Download</a>
+<a href="#about">About</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>HappyTons</h1>
+
+<p>
+A fan website for players who enjoy block-building games.
+Find official downloads, guides and community content.
+</p>
+
+<a class="btn" href="#download">
+Download
+</a>
+
 </section>
 
-<!-- DOWNLOAD -->
-<section id="download" style="padding:70px;text-align:center;">
-    <h1>⬇ Download Minecraft</h1>
-    <p>Get Minecraft from the official download pages.</p>
+<section id="features">
 
-    <a class="btn" href="https://www.minecraft.net/download" target="_blank">
-        💻 PC Download
-    </a>
+<h2 class="title">Features</h2>
 
-    <br><br>
-
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe" target="_blank">
-        📱 Android
-    </a>
-
-    <br><br>
-
-    <a class="btn" href="https://apps.apple.com/app/minecraft/id479516143" target="_blank">
-        🍎 iPhone / iPad
-    </a>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" style="padding:60px;">
-    <h1 align="center">📷 Gallery</h1>
-
-    <div class="grid">
-        <div class="card">
-            <h3>🏡 Beautiful Houses</h3>
-            <p>Create amazing modern and medieval houses.</p>
-        </div>
-
-        <div class="card">
-            <h3>🐉 Adventure</h3>
-            <p>Fight mobs, discover villages and explore caves.</p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Redstone</h3>
-            <p>Build automatic farms and powerful machines.</p>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section style="padding:70px;">
-<h1 align="center">❓ Frequently Asked Questions</h1>
+<div class="cards">
 
 <div class="card">
-<h3>Is HappyTons an official Minecraft website?</h3>
-<p>No. HappyTons is an independent fan website.</p>
+<h3>Survival</h3>
+<p>Explore, mine resources and survive dangerous adventures.</p>
 </div>
 
 <div class="card">
-<h3>Is Minecraft free?</h3>
-<p>No. Minecraft is a paid game. Download it from the official website or app stores.</p>
+<h3>Creative Mode</h3>
+<p>Build incredible structures with unlimited creativity.</p>
 </div>
 
 <div class="card">
-<h3>Can I play with friends?</h3>
-<p>Yes! Minecraft supports multiplayer on many platforms.</p>
+<h3>Community</h3>
+<p>Meet players, share builds and discover new ideas.</p>
+</div>
+
 </div>
 
 </section>
 
-<!-- CONTACT -->
-<section style="padding:70px;text-align:center;">
-<h1>📞 Contact</h1>
+<section id="gallery">
 
-<p>Email: support@happytons.com</p>
+<h2 class="title">Gallery</h2>
 
-<p>Discord: Coming Soon</p>
+<div class="gallery">
 
-<p>YouTube: HappyTons Gaming</p>
+<div class="img">Image 1</div>
+<div class="img">Image 2</div>
+<div class="img">Image 3</div>
+
+</div>
+
+</section>
+
+<section id="download">
+
+<h2 class="title">Official Downloads</h2>
+
+<div style="text-align:center;">
+
+<a class="btn" target="_blank"
+href="https://www.minecraft.net/download">
+PC
+</a>
+
+<a class="btn" target="_blank"
+href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe">
+Android
+</a>
+
+<a class="btn" target="_blank"
+href="https://apps.apple.com/app/minecraft/id479516143">
+iPhone
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About HappyTons</h2>
+
+<p style="text-align:center;font-size:18px;color:#ccc;max-width:900px;margin:auto;">
+HappyTons is an independent fan website where players can discover news,
+guides and community content related to block-building games.
+This website is not affiliated with Mojang Studios or Microsoft.
+</p>
 
 </section>
 
 <footer>
+
 <p>© 2026 HappyTons</p>
-<p>HappyTons is an independent fan website and is not affiliated with Mojang Studios or Microsoft.</p>
-</footer>﻿
-/* ===== BLACK & NEON GREEN THEME ===== */
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#050505;
-    color:#ffffff;
-    background-image:
-        radial-gradient(circle at top,#00ff6630 0%,transparent 45%);
-}
+<p>
+Independent Fan Website • Not affiliated with Mojang Studios or Microsoft.
+</p>
 
-/* Navbar */
-header{
-    background:#000;
-    border-bottom:2px solid #00ff66;
-    box-shadow:0 0 20px #00ff66;
-}
+</footer>
 
-/* Headings */
-h1,h2,h3{
-    color:#00ff66;
-    text-shadow:0 0 10px #00ff66;
-}
-
-/* Cards */
-.card{
-    background:#101010;
-    border:2px solid #00ff66;
-    border-radius:12px;
-    padding:25px;
-    transition:.35s;
-    box-shadow:0 0 15px rgba(0,255,102,.2);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 30px #00ff66;
-}
-
-/* Buttons */
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#00ff66;
-    color:#000;
-    font-weight:bold;
-    text-decoration:none;
-    border-radius:8px;
-    transition:.3s;
-    box-shadow:0 0 15px #00ff66;
-}
-
-.btn:hover{
-    background:#00cc55;
-    box-shadow:0 0 35px #00ff66;
-    transform:scale(1.05);
-}
-
-/* Sections */
-section{
-    padding:80px 8%;
-}
-
-/* Footer */
-footer{
-    background:#000;
-    color:#ccc;
-    border-top:2px solid #00ff66;
-    text-align:center;
-    padding:30px;
-}
-
-/* Scrollbar (Chrome/Edge) */
-::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-track{
-    background:#111;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#00ff66;
-    border-radius:10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background:#00cc55;
-}
+</body>
+</html>
